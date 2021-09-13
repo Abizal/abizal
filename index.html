@@ -1,0 +1,108 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>Abizal Ferdian</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <div class="sidebar">
+         <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Results">Results</a></li>
+                <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="container">
+            <h1><a href="">Abizal</a></h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Results">Results</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <label for="check"class="mobile-menu"><i  class="fas fa-bars fa-2x"></i></label>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="banner-left">
+                <img src="download.png" alt="">
+                <h2>Haiii... <br>
+                    Saya adalah seorang <span class="efek-ngetik">
+                    </span>
+            </div>
+                 </h2>
+                <p>Selamat datang di Website Saya</p>
+        </div>
+
+    </section>
+    
+    <section id="about">
+        <div class="container">
+                <h3>About</h3>
+                <p>Tahukah kamu bahwa JavaScript adalah bahasa pemrograman yang digunakan dalam pengembangan website agar lebih dinamis dan interaktif. Kalau sebelumnya kamu hanya mengenal HTML dan CSS, nah sekarang kamu jadi tahu bahwa JavaScript dapat meningkatkan fungsionalitas pada halaman web. Bahkan dengan JavaScript ini kamu bisa membuat aplikasi, tools, atau bahkan game pada web.
+
+                    Bicara teknis, JavaScript atau kita singkat menjadi JS merupakan bahasa pemrograman jenis interpreter, sehingga kamu tidak memerlukan compiler untuk menjalankannya. JavaScript memiliki fitur-fitur seperti berorientasi objek, client-side, high-level programming, dan loosely typed.</p>
+        </div>
+    </section>
+
+    <section id="Results">
+        <div class="container">
+            <h3>Results</h3>
+            <div class="perhitungan">
+                <input type="text" name="" id="bil1"> +
+                <input type="text" name="" id="bil2"> =
+                <input type="text" name="" id="hasil">
+            </div>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            $(".perhitungan").keyup(function(){
+                var bil1 = parseInt($("#bil1").val())
+                var bil2 = parseInt($("#bil2").val())
+
+                var hasil = bil1 + bil2;
+                $("#hasil").attr("value",hasil)
+            
+            });
+
+        </script>
+    </section>
+
+    <section id="contact"> 
+            <div class="container">
+                <h3>Contact</h3>
+                <div class="col-3">
+                    <h4>Alamat</h4>
+                    <p>Jln.Olahraga Pangkalbuluh,Payung,Bangka Belitung</p>
+                </div>
+
+                <div class="col-3">
+                    <h4>Email</h4>
+                    <p>abizal342@gmail.com</p>
+                </div>
+                
+                <div class="col-3">
+                    <h4>Telp/hp</h4>
+                    <p>+62 822 8200 3183</p>
+                </div>
+            </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <small>Desainer &copy; 2021 - Abizal Ferdian</small>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html> 
